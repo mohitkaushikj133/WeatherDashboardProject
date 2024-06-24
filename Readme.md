@@ -1,18 +1,3 @@
-weather_dashboard/
-│
-├── app.py
-├── requirements.txt
-├── venv/
-│   ├── bin/ (or Scripts\ on Windows)
-│   ├── include/
-│   ├── lib/
-│   └── ...
-├── script.js
-├── styles.css 
-└── templates/
-    └── index.html
-
-
 
 1. Clone the Repository:
     git clone <repository_url>

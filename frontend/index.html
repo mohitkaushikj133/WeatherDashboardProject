@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <form id="location-form">
+            <!-- select id="location-select">
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Paris">Paris</option>
+                <option value="Sydney">Sydney</option>
+            </select> -->
+            <input type="text" id="location-input" placeholder="Enter zipcode/city name" required \>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        
+
+        <div class="weather-sections">
+                <div class="weather-section" id="current-weather-section">
+                    <h2>Current Weather</h2>
+                    <div id="current-weather" class="weather-data"></div>
+                </div>
+
+                <div class="weather-section" id="forecast-section">
+                    <h2>Forecast</h2>
+                    <div id="forecast" class="weather-data"></div>
+                </div>
+                
+        </div>
+            
+        <div class="weather-section" id="live-ticker-section">
+            <h2>Live Tracker</h2>
+                <form id="live-ticker-form">
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" name="city" value="India" checked> India</label><br>
+                        <label><input type="checkbox" name="city" value="London" checked> London</label><br>
+                        <label><input type="checkbox" name="city" value="New York" checked> New York</label><br>
+                        <label><input type="checkbox" name="city" value="Tokyo"> Tokyo</label><br>
+                        <label><input type="checkbox" name="city" value="Paris"> Paris</label><br>
+                        <label><input type="checkbox" name="city" value="Sydney"> Sydney</label><br>
+                        
+                        <label><input type="checkbox" name="city" value="Australia"> Australia</label><br>
+                        <label><input type="checkbox" name="city" value="Amsterdam"> Amsterdam</label><br>
+                    </div>
+                </form>
+                <div id="live-ticker" class="weather-data"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
